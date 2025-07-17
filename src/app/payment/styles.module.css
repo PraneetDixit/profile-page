@@ -1,0 +1,230 @@
+#rules,
+#form {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ruleContainer {
+    border-radius: 10px;
+    color: #fdfdfd;
+    background: rgba(26, 25, 30, 0.6);
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ruleContainer.expanded {
+    overflow-y: auto;
+}
+
+.ruleContainer ul {
+    padding: 0px 22px 22px 22px;
+    line-height: 1.8;
+    display: none;
+    overflow-y: auto;
+}
+
+.ruleContainer.expanded ul {
+    display: block;
+}
+
+.ruleContainer h2 {
+    margin: 22px 0;
+    position: relative;
+    width: fit-content;
+}
+
+.ruleContainer h2 span {
+    position: relative;
+    z-index: 3;
+}
+
+.ruleContainer h2::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    bottom: 0;
+    height: 10%;
+    background: var(--grad);
+    transition: height 0.3s ease;
+    z-index: 2;
+}
+
+.ruleContainer h2:hover::after {
+    height: 30%;
+}
+
+.ruleContainer button {
+    position: absolute;
+    top: 4px;
+    right: 30px;
+    color: #fdfdfd;
+    font-size: 44px;
+    transform: rotate(0deg);
+}
+
+.ruleContainer.expanded button {
+    transform: rotate(90deg);
+}
+
+#form {
+    align-items: center;
+    justify-content: center;
+    color: #fdfdfd;
+    gap: 15px;
+}
+
+#innerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    background: rgba(26, 25, 30, 0.6);
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+#innerForm > p {
+    color: #8b8997;
+    padding: 0 5px;
+}
+
+#form li {
+    list-style-type: none;
+}
+
+#sizePicker {
+    position: relative;
+}
+
+#sizePicker > div {
+    background-color: rgba(26, 25, 30, 1);
+    padding: 4px 24px;
+    border-radius: 10px;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#sizePicker button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    margin-bottom: 6px;
+    transition: transform 0.3s ease;
+}
+
+.activeDropdown#sizePicker button{
+    transform: rotate(90deg) translateX(3px);
+}
+
+#sizePicker ul {
+    position: absolute;
+    top: calc(100% + 15px);
+    width: 100%;
+    left: 0;
+    background-color: rgba(26, 25, 30, 1);
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(2px);
+    z-index: 10;
+}
+
+.activeDropdown#sizePicker ul {
+    display: flex;
+}
+
+#sizePicker li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#sizePicker li:hover {
+    background-color: rgb(20 19 24);
+}
+
+#checkBoxWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fdfdfd;
+    justify-content: center;
+    margin: 60px 0 20px 0;
+}
+
+#checkBoxWrapper label span {
+    color: #8b8997;
+    cursor: pointer;
+}
+
+#checkBoxWrapper label span:hover {
+    text-decoration:  underline;
+}
+
+#form input[type="checkbox"] {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+#form input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #8b8997;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+#form input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+#form input[type="checkbox"]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+}
+
+#innerForm #proceedButton{
+    border: 2px solid #8b8997;
+    border-radius: 10px;
+    padding: 15px;
+    color: #8b8997;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#innerForm #proceedButton:hover {
+    background: #8b8997;
+    color: #fdfdfd;
+}
+
+#addLinks span{
+    color: #8b8997;
+    cursor: pointer;
+}
+
+#addLinks span:hover {
+    text-decoration: underline;
+}

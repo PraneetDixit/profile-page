@@ -1,0 +1,61 @@
+#certContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(26, 25, 30, 0.6);
+    border-radius: 15px;
+}
+
+#certHeader {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    gap: 25px;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+#certHeader h2 {
+    color: #bc8fff;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#back {
+    border-radius: 8px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fdfdfd;
+    color: #fdfdfd;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#back:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#download {
+    background: var(--grad);
+    padding: 10px 40px;
+    border-radius: 10px;
+    transition: color 0.3s ease;
+}
+
+#download:hover {
+    color: #fdfdfd;
+}
+
+#certContainer img{
+    display: block;
+    object-fit: contain;
+    margin-bottom: 30px;
+    width: 100%;
+    flex: 1;
+    min-height: 0; /* Important: allows flex item to shrink below content size */
+}
