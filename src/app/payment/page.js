@@ -210,9 +210,9 @@ export default function Payment() {
                             after concluding their respective events.
                         </li>
                         <li>
-                            Post-midnight, personal safety is the individual's
+                            Post-midnight, personal safety is the individual&apos;s
                             responsibility, and any incidents that occur
-                            thereafter are at the participant's own risk.
+                            thereafter are at the participant&apos;s own risk.
                         </li>
                     </ul>
                 </div>

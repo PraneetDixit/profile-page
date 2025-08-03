@@ -6,7 +6,7 @@ import { useState } from "react";
 import DP from "@/components/DP/DP";
 import Link from "next/link";
 
-export default function userinfo() {
+export default function UserInfo() {
     const [QRVisible, setQRVisible] = useState(false);
 
     const copy = async () => {
