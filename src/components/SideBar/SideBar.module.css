@@ -30,3 +30,12 @@
     border-radius: 10px;
     width: 90%;;
 }
+
+@media screen and (max-width: 1400px){
+    #sideBar{
+        position: absolute;
+        z-index: 10;
+        background-color: rgb(26, 25, 30);
+        transform: translateX(calc(-100% - 60px));
+    }
+}

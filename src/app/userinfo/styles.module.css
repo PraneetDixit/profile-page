@@ -148,7 +148,7 @@
     border-radius: 10px;
 }
 
-#detailSection a{
+#detailSection a {
     margin: 0 auto;
 }
 
@@ -166,4 +166,104 @@
     --m: conic-gradient(#000 0 0);
     mask: var(--m) content-box exclude, var(--m);
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1040px) {
+    #detailSection {
+        gap: 30px;
+    }
+
+    #userContainer {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #header {
+        flex-shrink: 0;
+    }
+
+    #detailSection {
+        flex-direction: column;
+    }
+
+    #userDetails {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #details h2 {
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #header {
+        padding: 30px;
+        justify-content: center;
+    }
+
+    #details {
+        flex-grow: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #header {
+        flex-direction: column;
+        gap: 5px;
+        padding: 25px;
+    }
+
+    #details h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #pfp img {
+        height: 150px;
+        width: 150px;
+    }
+
+    #pfp::before {
+        width: 145px;
+        height: 145px;
+    }
+
+    #userDetails {
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        background: transparent;
+    }
+
+    #upperHeader {
+        background: transparent;
+    }
+
+    #userDetails {
+        padding: 17px 20px;
+        background: rgba(26, 25, 30, 0.6);
+        border-radius: 15px;
+    }
+
+    #detailSection {
+        background: rgba(26, 25, 30, 0.6);
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+    }
+
+    #detailSection > div {
+        background-color: transparent;
+    }
+
+    #userContainer {
+        gap: 8px;
+    }
 }
