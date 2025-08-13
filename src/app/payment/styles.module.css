@@ -1,3 +1,10 @@
+#paymentContainer {
+    display: flex;
+    height: 100%;
+    gap: 45px;
+    overflow: hidden;
+}
+
 #rules,
 #form {
     flex-basis: 50%;
@@ -48,14 +55,14 @@
     left: -10px;
     right: -10px;
     bottom: 0;
-    height: 10%;
+    height: 3px;
     background: var(--grad);
     transition: height 0.3s ease;
     z-index: 2;
 }
 
 .ruleContainer h2:hover::after {
-    height: 30%;
+    height: 8.5px;
 }
 
 .ruleContainer button {
@@ -82,7 +89,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 50%;
+    width: min(90%, 350px);
     background: rgba(26, 25, 30, 0.6);
     border-radius: 10px;
     padding: 30px 20px;
@@ -121,7 +128,7 @@
     transition: transform 0.3s ease;
 }
 
-.activeDropdown#sizePicker button{
+.activeDropdown#sizePicker button {
     transform: rotate(90deg) translateX(3px);
 }
 
@@ -167,7 +174,7 @@
 }
 
 #checkBoxWrapper label span:hover {
-    text-decoration:  underline;
+    text-decoration: underline;
 }
 
 #form input[type="checkbox"] {
@@ -206,7 +213,7 @@
     outline-offset: max(2px, 0.15em);
 }
 
-#innerForm #proceedButton{
+#innerForm #proceedButton {
     border: 2px solid #8b8997;
     border-radius: 10px;
     padding: 15px;
@@ -220,11 +227,54 @@
     color: #fdfdfd;
 }
 
-#addLinks span{
+#addLinks span {
     color: #8b8997;
     cursor: pointer;
 }
 
 #addLinks span:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    #rules {
+        flex-basis: 70%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #ruleContainer h2 {
+        font-size: 22px;
+    }
+
+    #ruleContainer ul {
+        font-size: 15px;
+    }
+
+    #innerForm {
+        width: min(95%, 350px);
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #paymentContainer {
+        flex-direction: column-reverse;
+        overflow-y: auto;
+        align-items: center;
+    }
+
+    #rules {
+        width: 80%;
+    }
+
+    #innerForm {
+        width: min(95vw, 350px);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #rules {
+        width: 80%;
+        margin-bottom: 30px;
+    }
 }

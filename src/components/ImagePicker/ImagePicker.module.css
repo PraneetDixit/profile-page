@@ -1,4 +1,4 @@
-#imageContainer{
+#imageContainer {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,39 +11,40 @@
     z-index: 5;
 }
 
-#imageCard{
+#imageCard {
     padding: 30px;
     border-radius: 10px;
     background-color: rgba(26, 25, 30, 0.9);
 }
 
-#imageCard h2{
+#imageCard h2 {
     color: #fdfdfd;
     text-align: center;
     font-size: 26px;
 }
 
-#imageGrid{
+#imageGrid {
     display: flex;
     gap: 30px;
     width: 600px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 30px 20px;
+    margin: 0 auto;
 }
 
-#imageGrid img{
+#imageGrid img {
     z-index: 7;
     cursor: pointer;
     transition: transform 0.3s ease;
     position: relative;
 }
 
-.selected{
+.selected {
     position: relative;
 }
 
-#imageGrid img:hover{
+#imageGrid img:hover {
     transform: scale(1.05);
 }
 
@@ -70,21 +71,47 @@
     margin-top: 20px;
 }
 
-#buttonContainer button{
+#buttonContainer button {
     flex-basis: 40%;
     padding: 10px 16px;
     border-radius: 10px;
-    --accent: #4CAF50;
+    --accent: #4caf50;
     background-color: var(--accent);
     color: #fdfdfd;
     font-size: 20px;
     transition: opacity 0.3s ease;
 }
 
-#buttonContainer button:last-child{
+#buttonContainer button:last-child {
     --accent: #ff4d4d;
 }
 
-#buttonContainer button:hover{
+#buttonContainer button:hover {
     opacity: 0.8;
+}
+
+@media screen and (max-width: 780px) {
+    #imageGrid img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .selected::before {
+        width: 145px;
+        height: 145px;
+    }
+
+    #buttonContainer button {
+        flex-basis: 35%;
+        padding: 10px 14px;
+    }
+
+    #imageCard{
+        width: 90%;
+    }
+
+    #imageGrid{
+        width: 100%;
+        padding: 30px 0;
+    }
 }

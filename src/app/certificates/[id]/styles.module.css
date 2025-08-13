@@ -4,12 +4,13 @@
     flex-direction: column;
     background-color: rgba(26, 25, 30, 0.6);
     border-radius: 15px;
+    padding: 30px;
 }
 
 #certHeader {
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding-bottom: 30px;
     gap: 25px;
 }
 
@@ -51,11 +52,39 @@
     color: #fdfdfd;
 }
 
-#certContainer img{
+#certContainer img {
     display: block;
     object-fit: contain;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     width: 100%;
     flex: 1;
     min-height: 0; /* Important: allows flex item to shrink below content size */
+}
+
+@media screen and (max-width: 600px) {
+    #certContainer {
+        margin: 30px;
+    }
+
+    #certHeader h2 {
+        font-size: 20px;
+    }
+
+    a:has(#download) {
+        padding: 10px 25px;
+        order: 2;
+    }
+
+    a:has(#back) {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        order: 1;
+    }
+
+    #certHeader {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
 }

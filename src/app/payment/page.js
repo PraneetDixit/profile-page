@@ -46,6 +46,7 @@ export default function Payment() {
 
     return (
         <>
+        <div id={styles.paymentContainer}>
             <div id={styles.rules}>
                 <div
                     className={`${styles.ruleContainer} ${
@@ -254,6 +255,7 @@ export default function Payment() {
                     <span>Privacy Policy</span> | <span>Refund Policy</span> |{" "}
                     <span>Contact Us</span>
                 </p>
+            </div>
             </div>
         </>
     );

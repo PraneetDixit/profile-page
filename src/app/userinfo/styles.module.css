@@ -258,8 +258,9 @@
         border-top-left-radius: 26px;
         border-top-right-radius: 26px;
     }
-
+    
     #detailSection > div {
+        padding: 30px 40px;
         background-color: transparent;
     }
 
