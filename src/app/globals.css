@@ -10,7 +10,7 @@ body {
     height: 100vh;
     background-color: black;
     scroll-behavior: smooth;
-    --grad: linear-gradient(
+    /* --grad: linear-gradient(
         115deg,
         #91f7f6 0%,
         #75edff 8%,
@@ -25,7 +25,23 @@ body {
         #ffaba8 83%,
         #ffb69e 92%,
         #fac199 100%
-    );
+    ); */
+    --grad:  linear-gradient(
+    45deg,
+    hsl(199deg 99% 48%) 0%,
+    hsl(199deg 91% 49%) 8%,
+    hsl(200deg 87% 50%) 17%,
+    hsl(200deg 84% 51%) 25%,
+    hsl(201deg 82% 51%) 33%,
+    hsl(201deg 80% 51%) 42%,
+    hsl(201deg 77% 52%) 50%,
+    hsl(200deg 81% 52%) 58%,
+    hsl(199deg 85% 52%) 67%,
+    hsl(198deg 89% 52%) 75%,
+    hsl(197deg 93% 52%) 83%,
+    hsl(196deg 96% 51%) 92%,
+    hsl(195deg 100% 50%) 100%
+  );
 }
 
 *::-webkit-scrollbar-track {

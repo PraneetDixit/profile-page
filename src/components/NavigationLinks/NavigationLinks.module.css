@@ -22,22 +22,7 @@
     padding: 12px 15px;
     position: absolute;
     z-index: 1;
-    background: linear-gradient(
-        115deg,
-        #91f7f6 0%,
-        #75edff 8%,
-        #6be1ff 17%,
-        #70d4ff 25%,
-        #8ac4ff 33%,
-        #a8b2ff 42%,
-        #c79ff4 50%,
-        #e79ce2 58%,
-        #fb9dcc 67%,
-        #ffa3ba 75%,
-        #ffaba8 83%,
-        #ffb69e 92%,
-        #fac199 100%
-    );
+    background: var(--grad);
     width: 100%;
     transition: top 0.3s ease;
 }
@@ -48,7 +33,7 @@
     align-items: center;
     z-index: 2;
     list-style: none;
-    color: #8b8997;
+    color: #01a8f4;
     border-radius: 10px;
     display: flex;
     font-size: 16px;

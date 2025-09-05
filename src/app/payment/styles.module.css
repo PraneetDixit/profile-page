@@ -96,7 +96,7 @@
 }
 
 #innerForm > p {
-    color: #8b8997;
+    color: #01a8f4;
     padding: 0 5px;
 }
 
@@ -169,7 +169,7 @@
 }
 
 #checkBoxWrapper label span {
-    color: #8b8997;
+    color: #01a8f4;
     cursor: pointer;
 }
 
@@ -199,7 +199,7 @@
     height: 0.65em;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em #8b8997;
+    box-shadow: inset 1em 1em #01a8f4;
     transform-origin: bottom left;
     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
@@ -214,21 +214,21 @@
 }
 
 #innerForm #proceedButton {
-    border: 2px solid #8b8997;
+    border: 2px solid #01a8f4;
     border-radius: 10px;
     padding: 15px;
-    color: #8b8997;
+    color: #01a8f4;
     font-weight: bold;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
 #innerForm #proceedButton:hover {
-    background: #8b8997;
+    background: #01a8f4;
     color: #fdfdfd;
 }
 
 #addLinks span {
-    color: #8b8997;
+    color: #01a8f4;
     cursor: pointer;
 }
 
